@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Batyrlan Kushekbayev - ML/AI Engineer, Researcher, Mathematician">
+    <title>Batyrlan Kushekbayev | Portfolio</title>
+    <!-- Google Fonts: Inter and Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      <!-- Animated Background -->
+      <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+      </div>
+      
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="logo">BK.</div>
+        <div class="nav-links">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#expertise" class="nav-link">Expertise</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="hero">
+        <div class="hero-content">
+          <h2 class="subtitle fade-in">Hello, I'm</h2>
+          <h1 class="title fade-in delay-1">Batyrlan Kushekbayev</h1>
+          
+          <div class="roles fade-in delay-2">
+            <span class="role">ML/AI Engineer</span>
+            <span class="dot">•</span>
+            <span class="role">Researcher</span>
+            <span class="dot">•</span>
+            <span class="role">Mathematician</span>
+          </div>
+          
+          <p class="description fade-in delay-3">
+            Bridging the gap between pure mathematics and cutting-edge artificial intelligence to build robust, scalable, and innovative ML solutions.
+          </p>
+
+          <div class="cta-group fade-in delay-4">
+            <button class="btn btn-primary" id="exploreBtn">Explore Work</button>
+            <button class="btn btn-secondary">Get in Touch</button>
+          </div>
+        </div>
+        
+        <!-- Interactive 3D element -->
+        <div class="hero-visual fade-in delay-3">
+          <div class="glass-card">
+            <div class="code-snippet">
+              <pre><code><span class="keyword">import</span> torch
+<span class="keyword">import</span> torch.nn <span class="keyword">as</span> nn
+
+<span class="keyword">class</span> <span class="class-name">Brain</span>(nn.Module):
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        <span class="built-in">super</span>().__init__()
+        self.logic = MathToAI()
+        
+    <span class="keyword">def</span> <span class="function">forward</span>(self, x):
+        <span class="keyword">return</span> self.logic(x)</code></pre>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

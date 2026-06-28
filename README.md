@@ -1,0 +1,1 @@
+https://kushekbayev.vercel.app

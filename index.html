@@ -58,11 +58,16 @@
         <span class="logo__mark">BK</span><span class="logo__dot">.</span>
       </a>
       <nav class="nav-links" id="navLinks">
-        <a href="#about" class="nav-link" data-cursor="hover">About</a>
-        <a href="#expertise" class="nav-link" data-cursor="hover">Expertise</a>
-        <a href="#work" class="nav-link" data-cursor="hover">Work</a>
-        <a href="#contact" class="nav-link" data-cursor="hover">Contact</a>
-        <a href="#contact" class="nav-cta" data-cursor="hover">Let's talk</a>
+        <a href="#about" class="nav-link" data-cursor="hover" data-i18n="nav.about">About</a>
+        <a href="#expertise" class="nav-link" data-cursor="hover" data-i18n="nav.expertise">Expertise</a>
+        <a href="#work" class="nav-link" data-cursor="hover" data-i18n="nav.work">Work</a>
+        <a href="#contact" class="nav-link" data-cursor="hover" data-i18n="nav.contact">Contact</a>
+        <a href="#contact" class="nav-cta" data-cursor="hover" data-i18n="nav.cta">Let's talk</a>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-btn" data-lang="en" data-cursor="hover">EN</button>
+          <button type="button" class="lang-btn" data-lang="ru" data-cursor="hover">RU</button>
+          <button type="button" class="lang-btn" data-lang="kz" data-cursor="hover">KZ</button>
+        </div>
       </nav>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span>
@@ -78,33 +83,33 @@
           <div class="hero__content">
             <div class="badge reveal" data-cursor="hover">
               <span class="badge__pulse"></span>
-              Available for select collaborations
+              <span data-i18n="hero.badge">Available for select collaborations</span>
             </div>
 
-            <h1 class="hero__title reveal" data-reveal-delay="1">
+            <h1 class="hero__title reveal" data-reveal-delay="1" data-i18n-html="hero.title">
               Engineering intelligence<br />
               from <span class="grad-text">first principles.</span>
             </h1>
 
             <div class="hero__roles reveal" data-reveal-delay="2">
-              <span class="hero__roles-label">I'm Batyrlan —</span>
+              <span class="hero__roles-label" data-i18n="hero.rolesLabel">I'm Batyrlan —</span>
               <span class="hero__roles-rotator" id="roleRotator" aria-live="polite">
                 <span class="hero__role">ML / AI Engineer</span>
               </span>
             </div>
 
-            <p class="hero__desc reveal" data-reveal-delay="3">
+            <p class="hero__desc reveal" data-reveal-delay="3" data-i18n="hero.desc">
               I bridge pure mathematics and cutting-edge AI to design robust, scalable,
               and genuinely intelligent systems — from research notebook to production at scale.
             </p>
 
             <div class="hero__cta reveal" data-reveal-delay="4">
               <a href="#work" class="btn btn--primary" data-magnetic data-cursor="hover">
-                <span>Explore my work</span>
+                <span data-i18n="hero.ctaPrimary">Explore my work</span>
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
               </a>
               <a href="#contact" class="btn btn--ghost" data-magnetic data-cursor="hover">
-                <span>Get in touch</span>
+                <span data-i18n="hero.ctaSecondary">Get in touch</span>
               </a>
             </div>
 
@@ -142,14 +147,14 @@
               <div class="code-card__glow"></div>
             </div>
 
-            <div class="float-chip chip-1" data-cursor="hover"><span>⚡</span> 99.9% uptime</div>
-            <div class="float-chip chip-2" data-cursor="hover"><span>◆</span> &lt; 40ms latency</div>
+            <div class="float-chip chip-1" data-cursor="hover"><span>⚡</span> <span data-i18n="hero.chipUptime">99.9% uptime</span></div>
+            <div class="float-chip chip-2" data-cursor="hover"><span>◆</span> <span data-i18n="hero.chipLatency">&lt; 40ms latency</span></div>
           </div>
         </div>
 
         <a href="#about" class="hero__scroll" data-cursor="hover" aria-label="Scroll down">
           <span class="hero__scroll-mouse"><span></span></span>
-          <span class="hero__scroll-text">Scroll</span>
+          <span class="hero__scroll-text" data-i18n="hero.scroll">Scroll</span>
         </a>
       </section>
 
@@ -175,20 +180,20 @@
       <section class="stats">
         <div class="container stats__grid">
           <div class="stat reveal">
-            <div class="stat__num" data-count="6" data-suffix="+">0</div>
-            <div class="stat__label">Years building AI</div>
+            <div class="stat__num" data-count="1" data-suffix="">0</div>
+            <div class="stat__label" data-i18n="stats.experience">Year of experience</div>
           </div>
           <div class="stat reveal" data-reveal-delay="1">
-            <div class="stat__num" data-count="40" data-suffix="+">0</div>
-            <div class="stat__label">Models shipped to prod</div>
+            <div class="stat__num" data-count="10" data-suffix="+">0</div>
+            <div class="stat__label" data-i18n="stats.models">Models in production</div>
           </div>
           <div class="stat reveal" data-reveal-delay="2">
-            <div class="stat__num" data-count="12" data-suffix="">0</div>
-            <div class="stat__label">Research publications</div>
+            <div class="stat__num" data-count="5" data-suffix="+">0</div>
+            <div class="stat__label" data-i18n="stats.stacks">Tech stacks mastered</div>
           </div>
           <div class="stat reveal" data-reveal-delay="3">
             <div class="stat__num" data-count="99.9" data-suffix="%" data-decimals="1">0</div>
-            <div class="stat__label">Production reliability</div>
+            <div class="stat__label" data-i18n="stats.reliability">Production reliability</div>
           </div>
         </div>
       </section>
@@ -197,30 +202,30 @@
       <section class="about section" id="about">
         <div class="container about__grid">
           <div class="about__left reveal">
-            <span class="eyebrow">01 — About</span>
-            <h2 class="section-title">
+            <span class="eyebrow" data-i18n="about.eyebrow">01 — About</span>
+            <h2 class="section-title" data-i18n-html="about.title">
               Math is the language.<br />
               <span class="grad-text">AI is the application.</span>
             </h2>
           </div>
           <div class="about__right">
-            <p class="about__lead reveal">
+            <p class="about__lead reveal" data-i18n="about.lead">
               I'm a machine-learning engineer and researcher who treats every model as a
               theorem to be proven. My background in pure mathematics lets me reason about
               systems where others guess — turning fuzzy problems into precise, well-behaved
               architectures.
             </p>
-            <p class="about__text reveal" data-reveal-delay="1">
+            <p class="about__text reveal" data-reveal-delay="1" data-i18n="about.text">
               From transformer internals and optimization theory to distributed training and
               low-latency inference, I work across the full stack of modern AI. I care about
               correctness, reproducibility, and shipping research that actually survives contact
               with production.
             </p>
             <ul class="about__list reveal" data-reveal-delay="2">
-              <li><span class="check">✦</span> Deep learning & large language models</li>
-              <li><span class="check">✦</span> Optimization, probability & applied mathematics</li>
-              <li><span class="check">✦</span> Scalable MLOps & real-time inference systems</li>
-              <li><span class="check">✦</span> Research → production, end to end</li>
+              <li><span class="check">✦</span> <span data-i18n="about.list1">Deep learning &amp; large language models</span></li>
+              <li><span class="check">✦</span> <span data-i18n="about.list2">Optimization, probability &amp; applied mathematics</span></li>
+              <li><span class="check">✦</span> <span data-i18n="about.list3">Scalable MLOps &amp; real-time inference systems</span></li>
+              <li><span class="check">✦</span> <span data-i18n="about.list4">Research → production, end to end</span></li>
             </ul>
           </div>
         </div>
@@ -230,51 +235,51 @@
       <section class="expertise section" id="expertise">
         <div class="container">
           <div class="section-head reveal">
-            <span class="eyebrow">02 — Expertise</span>
-            <h2 class="section-title">What I bring to the table</h2>
-            <p class="section-sub">A full-spectrum skill set across research, engineering, and infrastructure.</p>
+            <span class="eyebrow" data-i18n="exp.eyebrow">02 — Expertise</span>
+            <h2 class="section-title" data-i18n="exp.title">What I bring to the table</h2>
+            <p class="section-sub" data-i18n="exp.sub">A full-spectrum skill set across research, engineering, and infrastructure.</p>
           </div>
 
           <div class="cards">
             <article class="card reveal" data-tilt data-cursor="hover">
               <div class="card__icon">🧠</div>
-              <h3 class="card__title">Deep Learning</h3>
-              <p class="card__text">Transformers, diffusion, GNNs and beyond — architected, trained, and tuned for real performance.</p>
+              <h3 class="card__title" data-i18n="exp.deepT">Deep Learning</h3>
+              <p class="card__text" data-i18n="exp.deepD">Transformers, diffusion, GNNs and beyond — architected, trained, and tuned for real performance.</p>
               <div class="card__tags"><span>PyTorch</span><span>JAX</span><span>CUDA</span></div>
             </article>
 
             <article class="card reveal" data-reveal-delay="1" data-tilt data-cursor="hover">
               <div class="card__icon">💬</div>
-              <h3 class="card__title">LLMs & NLP</h3>
-              <p class="card__text">Fine-tuning, RAG, alignment and evaluation pipelines for language models that ship.</p>
+              <h3 class="card__title" data-i18n="exp.llmT">LLMs & NLP</h3>
+              <p class="card__text" data-i18n="exp.llmD">Fine-tuning, RAG, alignment and evaluation pipelines for language models that ship.</p>
               <div class="card__tags"><span>Transformers</span><span>RAG</span><span>vLLM</span></div>
             </article>
 
             <article class="card reveal" data-reveal-delay="2" data-tilt data-cursor="hover">
               <div class="card__icon">👁️</div>
-              <h3 class="card__title">Computer Vision</h3>
-              <p class="card__text">Detection, segmentation and multimodal perception with production-grade accuracy.</p>
+              <h3 class="card__title" data-i18n="exp.cvT">Computer Vision</h3>
+              <p class="card__text" data-i18n="exp.cvD">Detection, segmentation and multimodal perception with production-grade accuracy.</p>
               <div class="card__tags"><span>ViT</span><span>YOLO</span><span>OpenCV</span></div>
             </article>
 
             <article class="card reveal" data-tilt data-cursor="hover">
               <div class="card__icon">∑</div>
-              <h3 class="card__title">Applied Mathematics</h3>
-              <p class="card__text">Optimization, linear algebra and probability as the foundation for every model decision.</p>
+              <h3 class="card__title" data-i18n="exp.mathT">Applied Mathematics</h3>
+              <p class="card__text" data-i18n="exp.mathD">Optimization, linear algebra and probability as the foundation for every model decision.</p>
               <div class="card__tags"><span>Optimization</span><span>Stats</span><span>Theory</span></div>
             </article>
 
             <article class="card reveal" data-reveal-delay="1" data-tilt data-cursor="hover">
               <div class="card__icon">⚙️</div>
-              <h3 class="card__title">MLOps & Infra</h3>
-              <p class="card__text">Reproducible pipelines, distributed training and low-latency serving at scale.</p>
+              <h3 class="card__title" data-i18n="exp.mlopsT">MLOps & Infra</h3>
+              <p class="card__text" data-i18n="exp.mlopsD">Reproducible pipelines, distributed training and low-latency serving at scale.</p>
               <div class="card__tags"><span>Kubernetes</span><span>Ray</span><span>Triton</span></div>
             </article>
 
             <article class="card reveal" data-reveal-delay="2" data-tilt data-cursor="hover">
               <div class="card__icon">🛰️</div>
-              <h3 class="card__title">Data Engineering</h3>
-              <p class="card__text">Robust ingestion, feature stores and streaming pipelines that feed hungry models.</p>
+              <h3 class="card__title" data-i18n="exp.dataT">Data Engineering</h3>
+              <p class="card__text" data-i18n="exp.dataD">Robust ingestion, feature stores and streaming pipelines that feed hungry models.</p>
               <div class="card__tags"><span>Spark</span><span>Kafka</span><span>SQL</span></div>
             </article>
           </div>
@@ -285,59 +290,25 @@
       <section class="work section" id="work">
         <div class="container">
           <div class="section-head reveal">
-            <span class="eyebrow">03 — Selected work</span>
-            <h2 class="section-title">Things I've built</h2>
-            <p class="section-sub">A few projects where math, models, and engineering came together.</p>
+            <span class="eyebrow" data-i18n="work.eyebrow">03 — Selected work</span>
+            <h2 class="section-title" data-i18n="work.title">Things I've built</h2>
+            <p class="section-sub" data-i18n="work.sub">A few projects where math, models, and engineering came together.</p>
           </div>
 
-          <div class="projects">
-            <article class="project reveal" data-cursor="hover">
-              <div class="project__index">01</div>
-              <div class="project__body">
-                <h3 class="project__title">Neural Inference Engine</h3>
-                <p class="project__desc">A custom serving runtime delivering sub-40ms transformer inference with dynamic batching and quantization — 4× throughput over baseline.</p>
-                <div class="project__tags"><span>PyTorch</span><span>Triton</span><span>CUDA</span><span>gRPC</span></div>
-              </div>
-              <div class="project__arrow">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
-              </div>
-            </article>
-
-            <article class="project reveal" data-reveal-delay="1" data-cursor="hover">
-              <div class="project__index">02</div>
-              <div class="project__body">
-                <h3 class="project__title">RAG Knowledge Platform</h3>
-                <p class="project__desc">End-to-end retrieval-augmented generation system with hybrid search, re-ranking and grounded citations over millions of documents.</p>
-                <div class="project__tags"><span>LLMs</span><span>Vector DB</span><span>FastAPI</span><span>Re-ranking</span></div>
-              </div>
-              <div class="project__arrow">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
-              </div>
-            </article>
-
-            <article class="project reveal" data-reveal-delay="2" data-cursor="hover">
-              <div class="project__index">03</div>
-              <div class="project__body">
-                <h3 class="project__title">Real-Time Vision System</h3>
-                <p class="project__desc">Multi-camera detection and tracking pipeline running on the edge — 60 FPS with on-device optimization and adaptive precision.</p>
-                <div class="project__tags"><span>ViT</span><span>TensorRT</span><span>Edge</span><span>OpenCV</span></div>
-              </div>
-              <div class="project__arrow">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
-              </div>
-            </article>
-
-            <article class="project reveal" data-reveal-delay="3" data-cursor="hover">
-              <div class="project__index">04</div>
-              <div class="project__body">
-                <h3 class="project__title">Optimization Research Toolkit</h3>
-                <p class="project__desc">Open research code exploring convergence behavior of second-order optimizers — featured in 3 peer-reviewed publications.</p>
-                <div class="project__tags"><span>JAX</span><span>Math</span><span>Research</span><span>NumPy</span></div>
-              </div>
-              <div class="project__arrow">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
-              </div>
-            </article>
+          <div class="work__soon reveal" data-tilt>
+            <div class="work__soon-orbits" aria-hidden="true">
+              <span></span><span></span><span></span>
+              <div class="work__soon-core">⌬</div>
+            </div>
+            <div class="work__soon-badge">
+              <span class="badge__pulse"></span>
+              <span data-i18n="work.soonBadge">In progress</span>
+            </div>
+            <h3 class="work__soon-title" data-i18n="work.soonTitle">Coming soon</h3>
+            <p class="work__soon-text" data-i18n="work.soonText">
+              I'm putting the finishing touches on a few projects worth showing. Check back shortly.
+            </p>
+            <div class="work__soon-tags"><span>RAG</span><span>LLMs</span><span>Vision</span><span>MLOps</span></div>
           </div>
         </div>
       </section>
@@ -346,9 +317,9 @@
       <section class="contact section" id="contact">
         <div class="container">
           <div class="contact__card reveal" data-tilt>
-            <span class="eyebrow">04 — Contact</span>
-            <h2 class="contact__title">Let's build something <span class="grad-text">intelligent.</span></h2>
-            <p class="contact__sub">
+            <span class="eyebrow" data-i18n="contact.eyebrow">04 — Contact</span>
+            <h2 class="contact__title" data-i18n-html="contact.title">Let's build something <span class="grad-text">intelligent.</span></h2>
+            <p class="contact__sub" data-i18n="contact.sub">
               Have a hard problem, a research idea, or a product that needs real ML?
               I'd love to hear about it.
             </p>
@@ -370,8 +341,8 @@
     <footer class="footer">
       <div class="container footer__inner">
         <span class="footer__logo">BK<span class="logo__dot">.</span></span>
-        <p class="footer__copy">© <span id="year"></span> Batyrlan Kushekbayev — crafted with math &amp; caffeine.</p>
-        <a href="#top" class="footer__top" data-cursor="hover">Back to top ↑</a>
+        <p class="footer__copy">© <span id="year"></span> Batyrlan Kushekbayev — <span data-i18n="footer.tagline">crafted with math &amp; caffeine.</span></p>
+        <a href="#top" class="footer__top" data-cursor="hover" data-i18n="footer.top">Back to top ↑</a>
       </div>
     </footer>
 

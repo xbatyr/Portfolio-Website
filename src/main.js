@@ -7,9 +7,11 @@ import { initNavigation } from './modules/navigation.js';
 import { initReveal } from './modules/reveal.js';
 import { initCounters } from './modules/counters.js';
 import { initInteractions } from './modules/interactions.js';
+import { initI18n } from './modules/i18n.js';
 
 // Things that don't depend on the intro finishing can start immediately.
 function boot() {
+  initI18n();
   initCursor();
   initNeural();
   initNavigation();

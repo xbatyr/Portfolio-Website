@@ -4,7 +4,6 @@ const fine = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 
 export function initInteractions() {
   setYear();
-  initRoleRotator();
   if (!fine || reduce) return;
   initTilt();
   initMagnetic();
@@ -14,45 +13,6 @@ export function initInteractions() {
 function setYear() {
   const el = document.getElementById('year');
   if (el) el.textContent = new Date().getFullYear();
-}
-
-// Rotating, typewritten job roles in the hero.
-function initRoleRotator() {
-  const host = document.getElementById('roleRotator');
-  if (!host) return;
-  const roles = ['ML / AI Engineer', 'Researcher', 'Mathematician', 'Systems Builder'];
-  const span = host.querySelector('.hero__role');
-  if (!span) return;
-
-  if (reduce) {
-    span.textContent = roles[0];
-    return;
-  }
-
-  let r = 0;
-  let i = 0;
-  let deleting = false;
-
-  const loop = () => {
-    const word = roles[r];
-    span.textContent = word.slice(0, i);
-
-    if (!deleting && i < word.length) {
-      i++;
-      setTimeout(loop, 75);
-    } else if (!deleting && i === word.length) {
-      deleting = true;
-      setTimeout(loop, 1600);
-    } else if (deleting && i > 0) {
-      i--;
-      setTimeout(loop, 38);
-    } else {
-      deleting = false;
-      r = (r + 1) % roles.length;
-      setTimeout(loop, 280);
-    }
-  };
-  loop();
 }
 
 // 3D tilt for elements with [data-tilt].
